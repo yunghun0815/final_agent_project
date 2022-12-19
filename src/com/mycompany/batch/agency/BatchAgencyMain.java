@@ -14,6 +14,7 @@ public class BatchAgencyMain {
 		
 		//내 아이피 + 50001포트 socket 서버 open
 		ServerSocket serverSocket = new ServerSocket(50001);
+		System.out.println("[Batch Agency 시작]");
 		while(true) {
 			Socket socket = serverSocket.accept();
 			System.out.println("연결 됨");
