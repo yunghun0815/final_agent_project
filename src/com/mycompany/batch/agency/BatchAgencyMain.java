@@ -30,6 +30,8 @@ public class BatchAgencyMain {
 			System.out.println(extension);
 			if(extension.equals("jar")) {
 				path = "java -jar " + path;
+			}else if(extension.equals("sh")) {
+				path = "sh " + path;
 			}
 			
 			// 받아온 path를 통해서 명령어 실행
